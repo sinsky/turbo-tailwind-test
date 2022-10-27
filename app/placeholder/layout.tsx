@@ -4,10 +4,8 @@ import "../../styles/output.css";
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="ja">
-      <head>
-        <title>appDir and tailwindcss</title>
-      </head>
-      <body>{children}</body>
+      <head></head>
+      <body className="m-8">{children}</body>
     </html>
   );
 };
