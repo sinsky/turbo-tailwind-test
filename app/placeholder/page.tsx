@@ -1,31 +1,14 @@
-import { use } from "react";
-
-type User = {
-  id: number;
-  name: string;
-};
-
-const fetchUsers: () => Promise<User[]> = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  return res.json();
-};
+import Link from "next/link";
 
 const Page = () => {
-  const users = use(fetchUsers());
-  return (
-    <div>
-      <h1 className="my-4 text-4xl font-bold text-blue-700">GitHub Users!</h1>
-      <div className="m-4">
-        {users.map((user) => {
-          return (
-            <div key={user.id}>
-              {user.id}: {user.name}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
+  return <div className="m-8">
+    <h1 className="my-4 text-4xl font-bold text-blue-700">JSON Placeholder Page List.</h1>
+    <ul className="ml-4">
+      <li>
+        <Link href="/placeholder/users/" className="bg-blue-200 hover:bg-blue-300 underline p-2">Users</Link>
+      </li>
+    </ul>
+  </div>;
 };
 
 export default Page;
