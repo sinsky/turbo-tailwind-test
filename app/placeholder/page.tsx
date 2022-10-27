@@ -15,6 +15,11 @@ const Page = () => {
             Posts
           </Link>
         </li>
+        <li>
+          <Link href="/placeholder/photos" className="bg-blue-200 hover:bg-blue-300 underline p-2">
+            Photos
+          </Link>
+        </li>
       </ul>
     </div>
   );
