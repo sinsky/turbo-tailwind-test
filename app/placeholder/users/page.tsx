@@ -26,7 +26,9 @@ const Page = () => {
         })}
       </div>
       <div>
-        <Link href="/placeholder" className="bg-blue-200 hover:bg-blue-300 underline p-2">back to Placeholder List</Link>
+        <Link href="/placeholder" className="bg-blue-200 hover:bg-blue-300 underline p-2">
+          back to Placeholder List
+        </Link>
       </div>
     </div>
   );
