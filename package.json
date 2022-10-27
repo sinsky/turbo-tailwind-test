@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:turbo": "concurrently \"next dev --turbo\" \"tailwindcss --input ./styles/global.css --output ./styles/output.css --watch\""
   },
   "dependencies": {
     "next": "13.0.0",
