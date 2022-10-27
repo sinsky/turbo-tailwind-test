@@ -37,3 +37,5 @@ next-env.d.ts
 
 # tailwindcss
 /styles/output.css
+
+.vscode
